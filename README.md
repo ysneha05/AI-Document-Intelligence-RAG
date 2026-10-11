@@ -33,6 +33,13 @@ A local Retrieval-Augmented Generation (RAG) application that lets users upload 
 5. Relevant passages are retrieved and provided to the language model.
 6. The application returns an answer and source metadata.
 
+## Application Screenshot
+
+![AI Document Intelligence RAG Assistant demo](frontend/rag-demo.png)
+
+*The application answers questions using retrieved PDF passages and displays source citations, including page and chunk information.*
+
+
 ### Architecture
 
 ```mermaid
