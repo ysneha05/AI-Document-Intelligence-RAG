@@ -1,0 +1,14 @@
+.venv/
+.venv313/
+__pycache__/
+*.pyc
+.env
+chroma_db/
+.faiss/
+.git/
+.gitignore
+README.md
+tests/
+evaluation/
+frontend/
+data/

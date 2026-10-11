@@ -1,0 +1,87 @@
+[
+  {
+    "id": 1,
+    "question": "According to WHO, how many premature deaths globally are caused by household and outdoor air pollution together every year?",
+    "expected_answer": "7 million",
+    "answerable": true
+  },
+  {
+    "id": 2,
+    "question": "According to WHO, how many premature deaths are caused by household air pollution annually?",
+    "expected_answer": "3.8 million",
+    "answerable": true
+  },
+  {
+    "id": 3,
+    "question": "According to WHO, how many deaths annually are caused by outdoor air pollution?",
+    "expected_answer": "4.2 million",
+    "answerable": true
+  },
+  {
+    "id": 4,
+    "question": "What are the main effects of air pollution discussed in the document?",
+    "expected_answer": "Effects on health, agriculture, environment, economy, the planet, and sustainable development goals.",
+    "answerable": true
+  },
+  {
+    "id": 5,
+    "question": "According to the document, what was the rank of outdoor and indoor air pollution combined among risk factors for deaths across all age groups in 2017?",
+    "expected_answer": "4th leading risk factor",
+    "answerable": true
+  },
+  {
+    "id": 6,
+    "question": "What does the document say about the effects of air pollution on agriculture?",
+    "expected_answer": "Ground-level O3 can reduce crop productivity by damaging plant tissues and interfering with plant growth. The document reports reductions of about 7–12% in wheat, 3–5% in maize, and 6–16% in soy, with wheat and soybean being more sensitive to ozone.",
+    "expected_keywords": [
+      "ground-level O3",
+      "crop productivity",
+      "7-12",
+      "3-5",
+      "6-16",
+      "wheat",
+      "maize",
+      "soy"
+    ],
+    "answerable": true
+  },
+  {
+    "id": 7,
+    "question": "What does the document say about the effects of air pollution on the environment?",
+    "expected_answer": "The document discusses acid rain, eutrophication, and haze as environmental effects of air pollution. Acid rain can create acidic environments and erode buildings, eutrophication can deplete oxygen in water and harm marine species, and haze can impair visibility.",
+    "expected_keywords": [
+      "acid rain",
+      "eutrophication",
+      "haze",
+      "visibility"
+    ],
+    "answerable": true
+  },
+  {
+    "id": 8,
+    "question": "What are the long-term effects of air pollution on the planet mentioned in the document?",
+    "expected_answer": "The document discusses climate change and global warming as long-term effects on the planet. It states that expansion of greenhouse gases since the Industrial Revolution induced significant climate change and average warming of 0.85°C between 1880 and 2012. Greenhouse gases trap terrestrial radiation, leading to higher temperatures.",
+    "expected_keywords": [
+      "climate change",
+      "greenhouse gases",
+      "Industrial Revolution",
+      "0.85",
+      "1880",
+      "2012",
+      "higher temperatures"
+    ],
+    "answerable": true
+  },
+  {
+    "id": 9,
+    "question": "What is the capital of France?",
+    "expected_answer": null,
+    "answerable": false
+  },
+  {
+  "id": 10,
+  "question": "What is the population of Japan?",
+  "expected_answer": null,
+  "answerable": false
+  }
+]

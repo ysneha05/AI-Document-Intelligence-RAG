@@ -1,0 +1,487 @@
+{
+  "metrics": {
+    "total_questions": 10,
+    "passed": 10,
+    "failed": 0,
+    "functional_pass_rate_percent": 100.0,
+    "answerable_questions": 8,
+    "answerable_questions_with_sources": 8,
+    "retrieval_success_rate_percent": 100.0,
+    "unanswerable_questions": 2,
+    "correct_refusal_count": 2,
+    "correct_refusal_rate_percent": 100.0,
+    "average_response_time_seconds": 50.35,
+    "median_response_time_seconds": 45.36,
+    "max_response_time_seconds": 168.33,
+    "average_sources_per_question": 2.4
+  },
+  "results": [
+    {
+      "id": 1,
+      "question": "According to WHO, how many premature deaths globally are caused by household and outdoor air pollution together every year?",
+      "expected_answer": "7 million",
+      "expected_keywords": [],
+      "generated_answer": "According to WHO, household air pollution accounts for some 3.8 million premature deaths and outdoor air pollution causes an estimated 4.2 million premature deaths, together accounting for 7 million deaths every year globally.",
+      "answerable": true,
+      "sources": [
+        {
+          "filename": "second_document.pdf",
+          "chunk_number": 66,
+          "page_numbers": [
+            52,
+            53
+          ],
+          "page_start": 52,
+          "page_end": 53,
+          "score": 0.035029508196721314
+        },
+        {
+          "filename": "second_document.pdf",
+          "chunk_number": 67,
+          "page_numbers": [
+            53,
+            54
+          ],
+          "page_start": 53,
+          "page_end": 54,
+          "score": 0.043786885245901644
+        },
+        {
+          "filename": "second_document.pdf",
+          "chunk_number": 68,
+          "page_numbers": [
+            54,
+            55
+          ],
+          "page_start": 54,
+          "page_end": 55,
+          "score": 0.035029508196721314
+        }
+      ],
+      "matched_keywords": [],
+      "missing_keywords": [],
+      "keyword_coverage_percent": null,
+      "response_time_seconds": 124.34,
+      "passed": true,
+      "error": null
+    },
+    {
+      "id": 2,
+      "question": "According to WHO, how many premature deaths are caused by household air pollution annually?",
+      "expected_answer": "3.8 million",
+      "expected_keywords": [],
+      "generated_answer": "3.8 million",
+      "answerable": true,
+      "sources": [
+        {
+          "filename": "second_document.pdf",
+          "chunk_number": 65,
+          "page_numbers": [
+            50,
+            51,
+            52
+          ],
+          "page_start": 50,
+          "page_end": 52,
+          "score": 0.031413166796773355
+        },
+        {
+          "filename": "second_document.pdf",
+          "chunk_number": 66,
+          "page_numbers": [
+            52,
+            53
+          ],
+          "page_start": 52,
+          "page_end": 53,
+          "score": 0.039266458495966695
+        },
+        {
+          "filename": "second_document.pdf",
+          "chunk_number": 67,
+          "page_numbers": [
+            53,
+            54
+          ],
+          "page_start": 53,
+          "page_end": 54,
+          "score": 0.031413166796773355
+        }
+      ],
+      "matched_keywords": [],
+      "missing_keywords": [],
+      "keyword_coverage_percent": null,
+      "response_time_seconds": 168.33,
+      "passed": true,
+      "error": null
+    },
+    {
+      "id": 3,
+      "question": "According to WHO, how many deaths annually are caused by outdoor air pollution?",
+      "expected_answer": "4.2 million",
+      "expected_keywords": [],
+      "generated_answer": "According to WHO, outdoor air pollution causes an estimated 4.2 million premature deaths annually.",
+      "answerable": true,
+      "sources": [
+        {
+          "filename": "second_document.pdf",
+          "chunk_number": 65,
+          "page_numbers": [
+            50,
+            51,
+            52
+          ],
+          "page_start": 50,
+          "page_end": 52,
+          "score": 0.03022244640605297
+        },
+        {
+          "filename": "second_document.pdf",
+          "chunk_number": 66,
+          "page_numbers": [
+            52,
+            53
+          ],
+          "page_start": 52,
+          "page_end": 53,
+          "score": 0.03777805800756621
+        },
+        {
+          "filename": "second_document.pdf",
+          "chunk_number": 67,
+          "page_numbers": [
+            53,
+            54
+          ],
+          "page_start": 53,
+          "page_end": 54,
+          "score": 0.03022244640605297
+        }
+      ],
+      "matched_keywords": [],
+      "missing_keywords": [],
+      "keyword_coverage_percent": null,
+      "response_time_seconds": 13.36,
+      "passed": true,
+      "error": null
+    },
+    {
+      "id": 4,
+      "question": "What are the main effects of air pollution discussed in the document?",
+      "expected_answer": "Effects on health, agriculture, environment, economy, the planet, and sustainable development goals.",
+      "expected_keywords": [],
+      "generated_answer": "The main effects of air pollution discussed in the document are:\n\n1. Effects on Health\n2. Effects on Agriculture\n3. Effects on Environment\n4. Effects on Economy\n5. Long-term Effects on the Planet\n6. Effects on Sustainable Development Goals",
+      "answerable": true,
+      "sources": [
+        {
+          "filename": "second_document.pdf",
+          "chunk_number": 2,
+          "page_numbers": [
+            4,
+            5
+          ],
+          "page_start": 4,
+          "page_end": 5,
+          "score": 0.029013166796773363
+        },
+        {
+          "filename": "second_document.pdf",
+          "chunk_number": 3,
+          "page_numbers": [
+            5,
+            6
+          ],
+          "page_start": 5,
+          "page_end": 6,
+          "score": 0.0362664584959667
+        },
+        {
+          "filename": "second_document.pdf",
+          "chunk_number": 4,
+          "page_numbers": [
+            6,
+            7
+          ],
+          "page_start": 6,
+          "page_end": 7,
+          "score": 0.029013166796773363
+        }
+      ],
+      "matched_keywords": [],
+      "missing_keywords": [],
+      "keyword_coverage_percent": null,
+      "response_time_seconds": 43.15,
+      "passed": true,
+      "error": null
+    },
+    {
+      "id": 5,
+      "question": "According to the document, what was the rank of outdoor and indoor air pollution combined among risk factors for deaths across all age groups in 2017?",
+      "expected_answer": "4th leading risk factor",
+      "expected_keywords": [],
+      "generated_answer": "The rank of outdoor and indoor air pollution combined among risk factors for deaths across all age groups in 2017 was 4th.",
+      "answerable": true,
+      "sources": [
+        {
+          "filename": "second_document.pdf",
+          "chunk_number": 65,
+          "page_numbers": [
+            50,
+            51,
+            52
+          ],
+          "page_start": 50,
+          "page_end": 52,
+          "score": 0.03481797990481227
+        },
+        {
+          "filename": "second_document.pdf",
+          "chunk_number": 66,
+          "page_numbers": [
+            52,
+            53
+          ],
+          "page_start": 52,
+          "page_end": 53,
+          "score": 0.043522474881015336
+        },
+        {
+          "filename": "second_document.pdf",
+          "chunk_number": 67,
+          "page_numbers": [
+            53,
+            54
+          ],
+          "page_start": 53,
+          "page_end": 54,
+          "score": 0.03481797990481227
+        }
+      ],
+      "matched_keywords": [],
+      "missing_keywords": [],
+      "keyword_coverage_percent": null,
+      "response_time_seconds": 7.12,
+      "passed": true,
+      "error": null
+    },
+    {
+      "id": 6,
+      "question": "What does the document say about the effects of air pollution on agriculture?",
+      "expected_answer": "Ground-level O3 can reduce crop productivity by damaging plant tissues and interfering with plant growth. The document reports reductions of about 7–12% in wheat, 3–5% in maize, and 6–16% in soy, with wheat and soybean being more sensitive to ozone.",
+      "expected_keywords": [
+        "ground-level O3",
+        "crop productivity",
+        "7-12",
+        "3-5",
+        "6-16",
+        "wheat",
+        "maize",
+        "soy"
+      ],
+      "generated_answer": "The document states that air pollutants like ground-level O3 and PM can impact crop productivity, but in different ways. Ground-level O3 adversely affects crop productivity by hindering the gas exchange, inflicting damage to plant tissues, and interfering with its growth. Exposure to O3 can lead to a reduction in wheat and maize production of 7-12% and 3-5%, respectively, and in soy production of 6-16%. Wheat and soybean are more sensitive to ozone than potato, rice, and maize. A study in 2000 found that ozone can incur a loss of 6.7 billion euros in Europe due to its negative impact on 23 crops. Countries with higher levels of ground-level O3 require more stringent measures to reduce the impact of O3 precursors.",
+      "answerable": true,
+      "sources": [
+        {
+          "filename": "second_document.pdf",
+          "chunk_number": 68,
+          "page_numbers": [
+            54,
+            55
+          ],
+          "page_start": 54,
+          "page_end": 55,
+          "score": 0.11589841269841271
+        },
+        {
+          "filename": "second_document.pdf",
+          "chunk_number": 69,
+          "page_numbers": [
+            55,
+            56
+          ],
+          "page_start": 55,
+          "page_end": 56,
+          "score": 0.14487301587301588
+        },
+        {
+          "filename": "second_document.pdf",
+          "chunk_number": 70,
+          "page_numbers": [
+            56
+          ],
+          "page_start": 56,
+          "page_end": 56,
+          "score": 0.11589841269841271
+        }
+      ],
+      "matched_keywords": [
+        "ground-level O3",
+        "crop productivity",
+        "7-12",
+        "3-5",
+        "6-16",
+        "wheat",
+        "maize",
+        "soy"
+      ],
+      "missing_keywords": [],
+      "keyword_coverage_percent": 100.0,
+      "response_time_seconds": 48.86,
+      "passed": true,
+      "error": null
+    },
+    {
+      "id": 7,
+      "question": "What does the document say about the effects of air pollution on the environment?",
+      "expected_answer": "The document discusses acid rain, eutrophication, and haze as environmental effects of air pollution. Acid rain can create acidic environments and erode buildings, eutrophication can deplete oxygen in water and harm marine species, and haze can impair visibility.",
+      "expected_keywords": [
+        "acid rain",
+        "eutrophication",
+        "haze",
+        "visibility"
+      ],
+      "generated_answer": "The document mentions several effects of air pollution on the environment, including:\n\n- Acid rain, caused by air pollutants such as SOX and NOX from burning fossil fuel or vehicle emissions, can create an acidic environment that is detrimental to plants, animals, and fish.\n- Acid rain can influence the urban environment, causing erosion of buildings or sculptures.\n- Eutrophication occurs when bodies of water are loaded with nutrients like phosphorus and nitrogen, causing the growth of plants and algae which deplete oxygen levels and make the environment uninhabitable for marine species.\n- Air pollutants, such as NOX from mobile vehicles and industrial sources, can deposit in water, contributing to eutrophication.\n- Air pollutants can also cause soil acidification, which can lead to eutrophication due to subsequent run-off into water systems.\n- Haze is mentioned, where the opacity of the atmosphere increases, reducing visibility.",
+      "answerable": true,
+      "sources": [
+        {
+          "filename": "second_document.pdf",
+          "chunk_number": 71,
+          "page_numbers": [
+            56,
+            57
+          ],
+          "page_start": 56,
+          "page_end": 57,
+          "score": 0.0816
+        },
+        {
+          "filename": "second_document.pdf",
+          "chunk_number": 72,
+          "page_numbers": [
+            57
+          ],
+          "page_start": 57,
+          "page_end": 57,
+          "score": 0.10200000000000001
+        },
+        {
+          "filename": "second_document.pdf",
+          "chunk_number": 73,
+          "page_numbers": [
+            57,
+            58
+          ],
+          "page_start": 57,
+          "page_end": 58,
+          "score": 0.0816
+        }
+      ],
+      "matched_keywords": [
+        "acid rain",
+        "eutrophication",
+        "haze",
+        "visibility"
+      ],
+      "missing_keywords": [],
+      "keyword_coverage_percent": 100.0,
+      "response_time_seconds": 50.54,
+      "passed": true,
+      "error": null
+    },
+    {
+      "id": 8,
+      "question": "What are the long-term effects of air pollution on the planet mentioned in the document?",
+      "expected_answer": "The document discusses climate change and global warming as long-term effects on the planet. It states that expansion of greenhouse gases since the Industrial Revolution induced significant climate change and average warming of 0.85°C between 1880 and 2012. Greenhouse gases trap terrestrial radiation, leading to higher temperatures.",
+      "expected_keywords": [
+        "climate change",
+        "greenhouse gases",
+        "Industrial Revolution",
+        "0.85",
+        "1880",
+        "2012",
+        "higher temperatures"
+      ],
+      "generated_answer": "The long-term effects of air pollution on the planet mentioned in the document include climate change. The UNFCCC defines climate change as \"the change of climate which is attributed directly or indirectly to human activity that alters the composition of the global atmosphere and which is in addition to natural climate variability observed over comparable time periods.\" According to the IPCC, significant climate change has been induced since the industrial revolution, with an average warming of 0.85℃ between 1880 and 2012. Air pollution contributes to this by trapping terrestrial radiation from leaving the atmosphere, leading to higher temperatures.",
+      "answerable": true,
+      "sources": [
+        {
+          "filename": "second_document.pdf",
+          "chunk_number": 77,
+          "page_numbers": [
+            59,
+            60
+          ],
+          "page_start": 59,
+          "page_end": 60,
+          "score": 0.11462857142857144
+        },
+        {
+          "filename": "second_document.pdf",
+          "chunk_number": 78,
+          "page_numbers": [
+            60
+          ],
+          "page_start": 60,
+          "page_end": 60,
+          "score": 0.1432857142857143
+        },
+        {
+          "filename": "second_document.pdf",
+          "chunk_number": 79,
+          "page_numbers": [
+            60,
+            61
+          ],
+          "page_start": 60,
+          "page_end": 61,
+          "score": 0.11462857142857144
+        }
+      ],
+      "matched_keywords": [
+        "climate change",
+        "Industrial Revolution",
+        "0.85",
+        "1880",
+        "2012",
+        "higher temperatures"
+      ],
+      "missing_keywords": [
+        "greenhouse gases"
+      ],
+      "keyword_coverage_percent": 85.71,
+      "response_time_seconds": 47.56,
+      "passed": true,
+      "error": null
+    },
+    {
+      "id": 9,
+      "question": "What is the capital of France?",
+      "expected_answer": null,
+      "expected_keywords": [],
+      "generated_answer": "I couldn't find the answer in the provided documents.",
+      "answerable": false,
+      "sources": [],
+      "matched_keywords": [],
+      "missing_keywords": [],
+      "keyword_coverage_percent": null,
+      "response_time_seconds": 0.14,
+      "passed": true,
+      "error": null
+    },
+    {
+      "id": 10,
+      "question": "What is the population of Japan?",
+      "expected_answer": null,
+      "expected_keywords": [],
+      "generated_answer": "I couldn't find the answer in the provided documents.",
+      "answerable": false,
+      "sources": [],
+      "matched_keywords": [],
+      "missing_keywords": [],
+      "keyword_coverage_percent": null,
+      "response_time_seconds": 0.11,
+      "passed": true,
+      "error": null
+    }
+  ]
+}

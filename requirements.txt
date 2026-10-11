@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+pydantic
+numpy
+scikit-learn
+pypdf
+langchain
+langchain-ollama
+python-multipart

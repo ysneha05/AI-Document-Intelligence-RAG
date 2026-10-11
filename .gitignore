@@ -1,0 +1,30 @@
+.venv/
+.env
+__pycache__/
+*.pyc
+data/
+chroma_db/
+.faiss/
+# Additional Python environments and test caches
+.venv*/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local indexes and generated artifacts
+chroma_db/
+.faiss/
+*.index
+app/embedding_test.py
+app/gemini_test.py
+app/langchain_test.py
+app/inspect_chunks.py
+
+# Temporary retrieval debugging scripts
+inspect_*.py
+
+# Local frontend backup
+frontend/index_backup.html
