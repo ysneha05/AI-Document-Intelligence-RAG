@@ -12,6 +12,12 @@ def build_index():
     chunks = load_all_chunks()
 
     print(f"Total chunks: {len(chunks)}")
+
+    if not chunks:
+        raise SystemExit(
+            "No document chunks found. Add PDF files to the data/ folder, then run this command again."
+        )
+    
     print("\nCreating semantic embeddings...")
 
     index = []
