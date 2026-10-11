@@ -33,6 +33,24 @@ A local Retrieval-Augmented Generation (RAG) application that lets users upload 
 5. Relevant passages are retrieved and provided to the language model.
 6. The application returns an answer and source metadata.
 
+### Architecture
+
+```mermaid
+flowchart TD
+    A[PDF Documents] --> B[Text Extraction]
+    B --> C[Overlapping Chunking]
+    C --> D[Semantic Index]
+    C --> E[TF-IDF Index]
+    D --> F[Hybrid Retrieval and Rank Fusion]
+    E --> F
+    G[User Question] --> H[FastAPI]
+    H --> F
+    F --> I[Relevant Passages]
+    I --> J[Ollama - Qwen 2.5]
+    J --> K[Answer with Source Metadata]
+    K --> L[Web Interface]
+```
+
 ## Requirements
 
 - Python 3.12 recommended
