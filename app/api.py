@@ -1,7 +1,7 @@
 import time
 from app.semantic_index import build_index
 from app.rag_pipeline import ask_question, initialize_rag
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from fastapi import UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -84,10 +84,11 @@ def ask(request: QuestionRequest):
 async def upload_document(file: UploadFile = File(...)):
     global chunks, vectorizer, matrix, semantic_index
 
-    if not file.filename.lower().endswith(".pdf"):
-        return {
-            "error": "Only PDF files are supported."
-        }
+    if not file.filename or not file.filename.lower().endswith(".pdf"):
+        raise HTTPException(
+            status_code=400,
+            detail="Only PDF files are supported."
+        )
 
     file_path = DATA_DIR / file.filename
 
