@@ -83,13 +83,22 @@ flowchart TD
    ```
 
 5. Place PDFs you are authorized to process in the local `data/` directory.
-6. Start the API from the project root:
+
+6. Build the semantic index after adding PDFs:
+
+   ```bash
+   python -m app.semantic_index
+   ```
+
+   This creates `data/semantic_index.json`. Ensure Ollama is running and the required models are available before building the index.
+
+7. Start the API from the project root:
 
    ```bash
    uvicorn app.api:app --host 127.0.0.1 --port 8000
    ```
 
-7. Open `http://127.0.0.1:8000/docs` to view the API documentation.
+8. Open `http://127.0.0.1:8000/docs` to view the API documentation.
 
 The application expects its PDF documents and generated semantic index in `data/`. Do not commit private documents or generated indexes to source control.
 
@@ -98,7 +107,7 @@ The application expects its PDF documents and generated semantic index in `data/
 1. Start the FastAPI backend on port 8000.
 2. Open the project in Visual Studio Code.
 3. Use the Live Server extension to serve `frontend/index.html` on port 5500.
-4. Open `http://127.0.0.1:5500` in your browser.
+4. Open `http://127.0.0.1:5500/frontend/` in your browser.
 
 The frontend calls the backend at `http://127.0.0.1:8000`.
 
