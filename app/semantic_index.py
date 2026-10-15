@@ -17,7 +17,7 @@ def build_index():
         raise SystemExit(
             "No document chunks found. Add PDF files to the data/ folder, then run this command again."
         )
-    
+
     print("\nCreating semantic embeddings...")
 
     index = []
@@ -38,10 +38,22 @@ def build_index():
             "embedding": embedding
         })
 
+
     INDEX_PATH.parent.mkdir(parents=True, exist_ok=True)
 
-    with open(INDEX_PATH, "w", encoding="utf-8") as file:
-        json.dump(index, file)
+    temp_path = INDEX_PATH.with_suffix(".tmp")
+
+    try:
+        with open(temp_path, "w", encoding="utf-8") as file:
+            json.dump(index, file)
+            file.flush()
+
+        temp_path.replace(INDEX_PATH)
+
+    finally:
+        if temp_path.exists():
+            temp_path.unlink()
+
 
     print("\nSemantic index saved successfully!")
     print(f"Location: {INDEX_PATH}")
@@ -54,6 +66,6 @@ def load_semantic_index():
 
     with open(INDEX_PATH, "r", encoding="utf-8") as file:
         return json.load(file)
-    
+
 if __name__ == "__main__":
     build_index()
