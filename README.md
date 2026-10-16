@@ -104,12 +104,18 @@ The application expects its PDF documents and generated semantic index in `data/
 
 ## Running the Frontend
 
-1. Start the FastAPI backend on port 8000.
-2. Open the project in Visual Studio Code.
-3. Use the Live Server extension to serve `frontend/index.html` on port 5500.
-4. Open `http://127.0.0.1:5500/frontend/` in your browser.
+1. Start the FastAPI backend on port 8000:
+   uvicorn app.api:app --host 127.0.0.1 --port 8000
 
-The frontend calls the backend at `http://127.0.0.1:8000`.
+2. Open a separate terminal from the project root and start the frontend server:
+   python -m http.server 5500 --directory frontend
+
+3. Open the frontend in your browser:
+   http://127.0.0.1:5500/index.html
+   
+The frontend calls the backend at http://127.0.0.1:8000.
+
+Keep both servers running while using the application.
 
 ## API Endpoints
 
